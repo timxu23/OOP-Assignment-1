@@ -4,14 +4,11 @@
 #include "Handler.h" // To DO
 int main() {
     int user_choice=0;
-    /*
-    test git commit
-    */
     while(user_choice!=6){
         user_choice= Handler::print_and_get_choices();
         switch (user_choice){
         case 1:
-            system("clear");
+            system("cls");
             Handler::add_two_complex_numbers();
             break;
         case 2:
@@ -35,6 +32,6 @@ int main() {
         cout<<"press enter key to continue.."<<endl;
         getchar();
         getchar();
-        system("clear");
+        system("cls");
     }
 }
