@@ -12,19 +12,19 @@ int main() {
             Handler::add_two_complex_numbers();
             break;
         case 2:
-            system("clear");
+            system("cls");
             Handler::subtract_two_complex_numbers();
             break;
         case 3:
-            system("clear");
+            system("cls");
             Handler::multiply_two_complex_numbers();
             break;
         case 4:
-            system("clear");
+            system("cls");
             Handler::divide_two_complex_numbers();
             break;
         case 5:
-            system("clear");
+            system("cls");
             Handler::find_conjugate_of_a_complex_number();
             break;
         }

@@ -52,9 +52,10 @@ class Complex{
       return result;
     }
     Complex operator*(const Complex& other) const {
-      // To DO
       Complex result;
-      
+      result.real = this->real * other.real - this->imaginary * other.imaginary;
+      result.imaginary = this->real * other.imaginary + this->imaginary * other.real;
+      return result;
     }
     Complex operator/(const Complex& other) const {
       Complex result;
@@ -63,7 +64,10 @@ class Complex{
       return result;
     }
     Complex conjugate() {
-      // To DO
+      Complex result;
+      result.real = this->real;
+      result.imaginary = -this->imaginary;
+      return result;
     }
     friend ostream& operator<<(ostream& os, Complex& c);
     friend istream& operator>>(istream& is, Complex& c);

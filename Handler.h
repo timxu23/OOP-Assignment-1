@@ -36,7 +36,13 @@ class Handler{
             cout << "Result is: " << n3 << endl;
         }
         static void multiply_two_complex_numbers(){
-            // To DO
+            Complex n1, n2, n3;
+            cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
+            cin >> n1;
+            cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
+            cin >> n2;
+            n3 = n1 * n2;
+            cout << "Result is: " << n3 << endl;
         }
         static void divide_two_complex_numbers(){
             Complex n1, n2, n3;
@@ -48,6 +54,10 @@ class Handler{
             cout << "Result is: " << n3 << endl;
         }
         static void find_conjugate_of_a_complex_number(){
-            // To DO
+            Complex n1, n2;
+            cout << "Enter the number without spaces (for example: 2+3i)" << endl;
+            cin >> n1;
+            n2 = n1.conjugate();
+            cout << "Conjugate is: " << n2 << endl;
         }
 };
