@@ -1,5 +1,5 @@
 #include <iostream>
-#include <Complex.h> 
+#include <Complex.h>
 using namespace std;
 class Handler{
     public:
@@ -19,6 +19,8 @@ class Handler{
         }
         static void add_two_complex_numbers(){
             Complex n1, n2, n3;
+            cout << "Add two complex numbers:" << endl;
+            cout<<"============================================"<<endl;
             cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
             cin >> n1;
             cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
@@ -28,6 +30,8 @@ class Handler{
         }
         static void subtract_two_complex_numbers(){
             Complex n1, n2, n3;
+            cout << "Subtract two complex numbers:" << endl;
+            cout<<"============================================"<<endl;
             cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
             cin >> n1;
             cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
@@ -37,6 +41,8 @@ class Handler{
         }
         static void multiply_two_complex_numbers(){
             Complex n1, n2, n3;
+            cout << "Multiply two complex numbers:" << endl;
+            cout << "============================================" << endl;
             cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
             cin >> n1;
             cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
@@ -46,6 +52,8 @@ class Handler{
         }
         static void divide_two_complex_numbers(){
             Complex n1, n2, n3;
+            cout << "Divide two complex numbers:" << endl;
+            cout << "============================================" << endl;
             cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
             cin >> n1;
             cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
@@ -55,6 +63,8 @@ class Handler{
         }
         static void find_conjugate_of_a_complex_number(){
             Complex n1, n2;
+            cout << "Find the conjugate of a complex number:" << endl;
+            cout << "============================================" << endl;
             cout << "Enter the number without spaces (for example: 2+3i)" << endl;
             cin >> n1;
             n2 = n1.conjugate();
