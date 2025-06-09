@@ -18,22 +18,28 @@ class Handler{
             return choice;
         }
         static void add_two_complex_numbers(){
-            // temp: just for testing entering two complex numbers
-            string n1, n2;
-            cout << "Enter first complex number" << endl;
+            Complex n1, n2, n3;
+            cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
             cin >> n1;
-            Complex c1(n1);
-            cout << c1.getImaginary() << endl;
-            cout << c1.getReal() << endl;
+            cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
+            cin >> n2;
+            n3 = n1 + n2;
+            cout << "Result is: " << n3 << endl;
         }
         static void subtract_two_complex_numbers(){
             // To DO
         }
         static void multiply_two_complex_numbers(){
-            // To DOndl;
+            // To DO
         }
         static void divide_two_complex_numbers(){
-            // To DO
+            Complex n1, n2, n3;
+            cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
+            cin >> n1;
+            cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
+            cin >> n2;
+            n3 = n1 / n2;
+            cout << "Result is: " << n3 << endl;
         }
         static void find_conjugate_of_a_complex_number(){
             // To DO

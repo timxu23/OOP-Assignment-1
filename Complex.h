@@ -40,18 +40,47 @@ class Complex{
         }
     }
     Complex operator+(Complex rhs){
-      // To DO
+      Complex result;
+      result.real = this->real + rhs.real;
+      result.imaginary = this-> imaginary + rhs.imaginary;
+      return result;
     }
     Complex operator-(Complex rhs){
-      // To DO
+      Complex result;
+      result.real = this->real - rhs.real;
+      result.imaginary = this-> imaginary - rhs.imaginary;
+      return result;
     }
     Complex operator*(const Complex& other) const {
       // To DO
+      Complex result;
+      
     }
     Complex operator/(const Complex& other) const {
-      // To DO
+      Complex result;
+      result.real = (this->real * other.real + this->imaginary * other.imaginary) / (other.real * other.real + other.imaginary * other.imaginary);
+      result.imaginary = (this->imaginary * other.real - this->real * other.imaginary) / (other.real * other.real + other.imaginary * other.imaginary);
+      return result;
     }
     Complex conjugate() {
       // To DO
     }
+    friend ostream& operator<<(ostream& os, Complex& c);
+    friend istream& operator>>(istream& is, Complex& c);
 };
+
+ostream& operator<<(ostream& os, Complex& c) {
+    os << c.real;
+    if (c.imaginary >= 0) {
+        os << "+";
+    }
+    os << c.imaginary << "i";
+    return os;
+}
+
+istream& operator>>(istream& is, Complex& c) {
+    string input;
+    is >> input;
+    c = Complex(input);
+    return is;
+}
