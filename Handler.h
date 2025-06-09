@@ -21,9 +21,9 @@ class Handler{
             Complex n1, n2, n3;
             cout << "Add two complex numbers:" << endl;
             cout<<"============================================"<<endl;
-            cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the first number without spaces (for example: 2+i3)" << endl;
             cin >> n1;
-            cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the second number without spaces (for example: 2+i3)" << endl;
             cin >> n2;
             n3 = n1 + n2;
             cout << "Result is: " << n3 << endl;
@@ -32,9 +32,9 @@ class Handler{
             Complex n1, n2, n3;
             cout << "Subtract two complex numbers:" << endl;
             cout<<"============================================"<<endl;
-            cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the first number without spaces (for example: 2+i3)" << endl;
             cin >> n1;
-            cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the second number without spaces (for example: 2+i3)" << endl;
             cin >> n2;
             n3 = n1 - n2;
             cout << "Result is: " << n3 << endl;
@@ -43,9 +43,9 @@ class Handler{
             Complex n1, n2, n3;
             cout << "Multiply two complex numbers:" << endl;
             cout << "============================================" << endl;
-            cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the first number without spaces (for example: 2+i3)" << endl;
             cin >> n1;
-            cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the second number without spaces (for example: 2+i3)" << endl;
             cin >> n2;
             n3 = n1 * n2;
             cout << "Result is: " << n3 << endl;
@@ -54,9 +54,9 @@ class Handler{
             Complex n1, n2, n3;
             cout << "Divide two complex numbers:" << endl;
             cout << "============================================" << endl;
-            cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the first number without spaces (for example: 2+i3)" << endl;
             cin >> n1;
-            cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the second number without spaces (for example: 2+i3)" << endl;
             cin >> n2;
             n3 = n1 / n2;
             cout << "Result is: " << n3 << endl;
@@ -65,7 +65,7 @@ class Handler{
             Complex n1, n2;
             cout << "Find the conjugate of a complex number:" << endl;
             cout << "============================================" << endl;
-            cout << "Enter the number without spaces (for example: 2+3i)" << endl;
+            cout << "Enter the number without spaces (for example: 2+i3)" << endl;
             cin >> n1;
             n2 = n1.conjugate();
             cout << "Conjugate is: " << n2 << endl;

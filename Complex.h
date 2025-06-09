@@ -29,7 +29,7 @@ class Complex{
 
         if (i_pos != string::npos && sign_pos != string::npos) {
             string real_str = n.substr(0, sign_pos);
-            string imag_str = n.substr(sign_pos, i_pos - sign_pos);
+            string imag_str = n.substr(i_pos+1);
             real = atof(real_str.c_str());
             imaginary = atof(imag_str.c_str());
         } else {
@@ -77,7 +77,7 @@ ostream& operator<<(ostream& os, Complex& c) {
     if (c.imaginary >= 0) {
         os << "+";
     }
-    os << c.imaginary << "i";
+    os << "i" << c.imaginary;
     return os;
 }
 
