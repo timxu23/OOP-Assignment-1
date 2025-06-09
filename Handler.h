@@ -27,7 +27,13 @@ class Handler{
             cout << "Result is: " << n3 << endl;
         }
         static void subtract_two_complex_numbers(){
-            // To DO
+            Complex n1, n2, n3;
+            cout << "Enter the first number without spaces (for example: 2+3i)" << endl;
+            cin >> n1;
+            cout << "Enter the second number without spaces (for example: 2+3i)" << endl;
+            cin >> n2;
+            n3 = n1 - n2;
+            cout << "Result is: " << n3 << endl;
         }
         static void multiply_two_complex_numbers(){
             // To DO
