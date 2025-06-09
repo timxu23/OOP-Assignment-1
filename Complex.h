@@ -76,8 +76,12 @@ ostream& operator<<(ostream& os, Complex& c) {
     os << c.real;
     if (c.imaginary >= 0) {
         os << "+";
+        os << "i" << c.imaginary;
+    } else {
+        os << "-";
+        os << "i" << -(c.imaginary);
     }
-    os << "i" << c.imaginary;
+    
     return os;
 }
 
